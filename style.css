@@ -28,6 +28,9 @@ body {
     animation:text-pop-up-top .5s cubic-bezier(.25,.46,.45,.94) both
 }
 
+/* 2nd */
+.text-shadow-drop-center{animation:text-focus-in 3s cubic-bezier(.55,.085,.68,.53) both}
+
 .text-shadow-drop-center:hover {
     transform: translateY(-50px); /* Smooth upward movement */
     text-shadow: 
@@ -51,3 +54,7 @@ body {
         text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
     }
 }
+
+
+/* 2nd */
+@keyframes text-focus-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
